@@ -43,11 +43,11 @@ def predict_disease(input_data):
 
     # Logique de prédiction basée sur un score simple
     if score >= 4:
-        return 'Risque Élevé'
+        return 'Risque Élevé de maladie thyroïdienne'
     elif score == 3:
-        return 'Risque Intermédiaire'
+        return 'Risque Intermédiaire de maladie thyroïdienne'
     else:
-        return 'Risque Faible'
+        return 'Risque Faible de maladie thyroïdienne'
 
 # Page de prédiction
 st.markdown("<h2 style='color:#4B0082;'>Entrez les informations cliniques :</h2>", unsafe_allow_html=True)
